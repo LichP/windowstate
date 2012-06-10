@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
   ]
 
   s.add_dependency "windows-pr", "~> 1.2"
+  s.add_dependency "trollop", "~> 1"
   s.add_development_dependency "ocra", "~> 1.3"
 end
