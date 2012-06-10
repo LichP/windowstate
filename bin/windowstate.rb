@@ -8,6 +8,8 @@ end
 require 'trollop'
 require 'tmpdir'
 
+exit if defined?(Ocra)
+
 SUB_COMMANDS = %w(save restore debug)
 
 global_opts = Trollop::options do
@@ -15,7 +17,7 @@ global_opts = Trollop::options do
   banner ""
   banner "Usage:"
   banner ""
-  banner "    #{File.basename($0)} [GLOBAL OPTIONS] COMMAND [COMMAND OPTIONS]"
+  banner "    #{File.basename(ENV['OCRA_EXECUTABLE'] || $0)} [GLOBAL OPTIONS] COMMAND [COMMAND OPTIONS]"
   banner ""
   banner "Commands:"
   banner ""
