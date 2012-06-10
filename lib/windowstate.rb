@@ -1,4 +1,10 @@
 # encoding: iso-8859-1
+#
+# Copyright (c) 2012 Phil Stewart
+#
+# License:  BSD - see LICENSE file
+# Homepage: https://github.com/Lichp/windowstate
+
 require 'json'
 require 'windows/window'
 

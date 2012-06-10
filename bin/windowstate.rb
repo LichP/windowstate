@@ -1,3 +1,8 @@
+# Copyright (c) 2012 Phil Stewart
+#
+# License:  BSD - see LICENSE file
+# Homepage: https://github.com/LichP/windowstate
+
 begin
   require 'windowstate'
 rescue LoadError
