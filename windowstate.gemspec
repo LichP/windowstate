@@ -17,8 +17,11 @@ Gem::Specification.new do |s|
     "README*",
     "LICENSE",
     "Rakefile",
-    "bin/*.rb"
+    "bin/windowstate.rb"
   ]
+
+  s.bindir = 'bin'
+  s.executables = 'windowstate.rb'
 
   s.add_dependency "windows-pr", "~> 1.2"
   s.add_dependency "trollop", "~> 1"
