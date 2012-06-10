@@ -59,7 +59,6 @@ module WindowState
     end
     
     def to_json(*a)
-      puts title
       {
         'json_class' => self.class.name,
         'data'       => [handle, title, data]
